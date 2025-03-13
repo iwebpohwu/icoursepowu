@@ -1,4 +1,4 @@
 <?php
-//$db = @mysqli_connect("数据库地址","用户名","密码","数据库名")
-$db = @mysqli_connect("localhost","hw","hwhwhw","hw")
+//$db = @mysqli_connect("資料庫位址","用戶名","密碼","資料庫名")
+$db = @mysqli_connect("if0_38495555","if0_38495555","LU889UCNtwnmcI","sql202.infinityfree.com")
 or die("Fail to connect to Server");
