@@ -15,59 +15,59 @@ if(!isset($_SESSION["user"])||!$_SESSION["login"]==true){
 <body>
 <div class="container topnav">
     <div class="logo">
-        学生选课信息管理系统
+        學生選課資訊管理系統
     </div>
     <div class="userbox" style="float:right">
-        当前用户：<?php echo $_SESSION["user"]?>  <a href="../logout.php">登出</a>
+        當前用戶：<?php echo $_SESSION["user"]?>  <a href="../logout.php">登出</a>
     </div>
 
 </div>
 <div class="container main">
     <div class="leftnav">
         <div class="homepage">
-            <a href="./welcome.php" target="frame">首页</a>
+            <a href="./welcome.php" target="frame">首頁</a>
         </div>
         <div class="subtitle">
-            个人信息
+            個人資訊
         </div>
         <div class="item">
-            <a href="./myInfo.php" target="frame">学籍信息</a>
+            <a href="./myInfo.php" target="frame">學籍信息</a>
         </div>
         <div class="item">
-            <a href="./editInfo.php" target="frame">修改信息</a>
+            <a href="./editInfo.php" target="frame">修改資訊</a>
         </div>
         <div class="subtitle">
-            选课管理
+            選課管理
         </div>
         <div class="item">
-            <a href="./queueClass.php" target="frame">开课查询</a>
+            <a href="./queueClass.php" target="frame">開課查詢</a>
         </div>
         <div class="item">
-            <a href="./myClass.php" target="frame">选课管理</a>
+            <a href="./myClass.php" target="frame">選課管理</a>
         </div>
         <div class="subtitle">
-            成绩查询
+            成績查詢
         </div>
         <div class="item">
-            <a href="./myScore.php" target="frame">学科成绩</a>
+            <a href="./myScore.php" target="frame">學科成績</a>
         </div>
         <div class="item">
             <a href="./myRetake.php" target="frame">重修管理</a>
         </div>
         <div class="subtitle">
-            奖惩管理
+            獎懲管理
         </div>
         <div class="item">
-            <a href="./myLog.php" target="frame">奖惩查询</a>
+            <a href="./myLog.php" target="frame">獎懲查詢</a>
         </div>
         <div class="item">
-            <a href="./addLog.php" target="frame">项目录入</a>
+            <a href="./addLog.php" target="frame">項目錄入</a>
         </div>
         <div class="subtitle">
-            系统管理
+            系統管理
         </div>
         <div class="item">
-            <a href="./editPass.php" target="frame">修改密码</a>
+            <a href="./editPass.php" target="frame">修改密碼</a>
         </div>
 
 
@@ -79,7 +79,7 @@ if(!isset($_SESSION["user"])||!$_SESSION["login"]==true){
 
 </div>
 <div class="container footer">
-    <span>数据库系统课程设计@2019</span>
+    <span>資料庫系統課程設計@2019</span>
 </div>
 </body>
 </html>

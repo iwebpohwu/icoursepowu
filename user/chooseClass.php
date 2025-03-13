@@ -17,38 +17,38 @@
     $ok=false;
 
     echo "<h3>";
-    if($resultretake->num_rows>0){ //有重修记录
-        echo("当前课程有重修记录");
+    if($resultretake->num_rows>0){ //有重修記錄
+        echo("當前課程有重修記錄");
         $checknotfinish=mysqli_query($db,$checkretakenotfinish);
         if($checknotfinish->num_rows>0){
-             echo('，且当前已有选课记录，退出。');
+             echo('，且當前已有選課記錄，退出。');
         }
         else{
             $delretake=mysqli_query($db,$deleteretake);
             $addretake=mysqli_query($db,$insertretake);
             if($addretake && $delretake){
             $ok=true;
-            echo('，删除先前的重修记录，新增选课。');
+            echo('，刪除先前的重修記錄，新增選課。');
             }
         }
     }
-    else if($resultfirst->num_rows>0){ //有选课记录
-        echo("当前课程有选课记录");
+    else if($resultfirst->num_rows>0){ //有選課記錄
+        echo("當前課程有選課記錄");
         while($row=mysqli_fetch_object($resultfirst)){
             if($row->score==null){
-                echo('，未完成的课程，退出。');
+                echo('，未完成的課程，退出。');
             }
             else{
                 $addretake=mysqli_query($db,$insertretake);
                 if($addretake){
                 $ok=true;
-                echo('，新增首次重修记录。');
+                echo('，新增首次重修記錄。');
                 }
             }
         }
     }
-    else{ //没有记录
-        echo("当前课程为首次选课，新增选课记录。");
+    else{ //沒有記錄
+        echo("當前課程為首次選課，新增選課記錄。");
         $addfirst=mysqli_query($db,$insertfirst);
         if($addfirst){
             $ok=true;
@@ -56,10 +56,10 @@
     }
     
     if($ok){
-        echo "<br>数据已更新。";
+        echo "<br>資料已更新。";
     }
     else{
-        echo "<br>数据未更改。";
+        echo "<br>資料未更改。";
     }
 
     mysqli_close($db);

@@ -10,7 +10,7 @@
         echo "提示：操作成功！";
     }
     else{
-        echo "数据未更改。";
+        echo "資料未更改。";
     }
     echo "</h3>";
     mysqli_close($db);

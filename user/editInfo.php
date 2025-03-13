@@ -7,10 +7,10 @@ if(isset($_POST["age"])){
 
     $result=mysqli_query($db,$com);
     if($result){
-        echo '<h4 style="margin:30px;">提示：信息更改成功！</h4>';
+        echo '<h4 style="margin:30px;">提示：資訊更改成功！</h4>';
     }
     else{
-        echo '<h4 style="margin:30px;">注意：数据未更改！</h4>';
+        echo '<h4 style="margin:30px;">注意：資料未更改！</h4>';
     }
 
     mysqli_close($db);
@@ -35,14 +35,14 @@ if($result){
     <title>Result</title>
 </head>
 <body>
-<h3 class="subtitle">修改信息</h3>
+<h3 class="subtitle">修改資訊</h3>
     <form action="./editInfo.php" method="post">
 
         <div class="inputbox"><span>姓名：</span><input name="name" type="text" required disabled value="<?php echo $row->name ?>"></div>
-        <div class="inputbox"><span>年龄：</span><input name="age" type="text" required value="<?php echo $row->age ?>"></div>
-        <div class="inputbox"><span>邮箱：</span><input name="email" type="text" required value="<?php echo $row->email ?>"></div>
-        <div class="inputbox"><span>手机：</span><input name="tel" type="text" required value="<?php echo $row->tel ?>"></div>
-        <div class="clickbox clearfloat"><span></span><input name="submit" type="submit" value="修改信息"></div>
+        <div class="inputbox"><span>年齡：</span><input name="age" type="text" required value="<?php echo $row->age ?>"></div>
+        <div class="inputbox"><span>郵箱：</span><input name="email" type="text" required value="<?php echo $row->email ?>"></div>
+        <div class="inputbox"><span>手機：</span><input name="tel" type="text" required value="<?php echo $row->tel ?>"></div>
+        <div class="clickbox clearfloat"><span></span><input name="submit" type="submit" value="修改資訊"></div>
     </form>
 
         <?php
@@ -50,4 +50,3 @@ if($result){
 }
 mysqli_close($db);
 ?>
-

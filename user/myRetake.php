@@ -10,14 +10,14 @@ require_once("../config/database.php");
     <link rel="stylesheet" type="text/css" href="./user.css">
 </head>
 <body>
-    <h3>重修查询</h3>
-    <h4>正在重修课程</h4>
+    <h3>重修查詢</h3>
+    <h4>正在重修課程</h4>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>学分</th>
-        <th>教师名</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>學分</th>
+        <th>教師名</th>
     </tr>
     <?php
 
@@ -38,14 +38,14 @@ require_once("../config/database.php");
     }
     ?>
 </table>
-<h4>已重修课程</h4>
+<h4>已重修課程</h4>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>学分</th>
-        <th>教师名</th>
-        <th>成绩</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>學分</th>
+        <th>教師名</th>
+        <th>成績</th>
     </tr>
     <?php
 
@@ -67,14 +67,14 @@ require_once("../config/database.php");
     }
     ?>
 </table>
-<h4>不及格课程记录</h4>
+<h4>不及格課程記錄</h4>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>学分</th>
-        <th>教师名</th>
-        <th>成绩</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>學分</th>
+        <th>教師名</th>
+        <th>成績</th>
     </tr>
     <?php
 

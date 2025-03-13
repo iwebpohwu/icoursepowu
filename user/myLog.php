@@ -10,14 +10,14 @@ require_once("../config/database.php");
     <link rel="stylesheet" type="text/css" href="./user.css">
 </head>
 <body>
-    <h3>奖惩查询</h3>
+    <h3>獎懲查詢</h3>
 <table>
     <tr>
-        <th>奖惩</th>
-        <th>缘由</th>
-        <th>详情</th>
-        <th>发生时间</th>
-        <th>录入时间</th>
+        <th>獎懲</th>
+        <th>緣由</th>
+        <th>詳情</th>
+        <th>發生時間</th>
+        <th>錄入時間</th>
         <th>操作</th>
     </tr>
     <?php
@@ -31,10 +31,10 @@ require_once("../config/database.php");
             <tr>
                 <td><?php
                     if ($row->type==1){
-                        echo '奖';
+                        echo '獎';
                     }
                     else{
-                        echo '惩';
+                        echo '懲';
                     }
                     ?></td>
                 <td><?php echo $row->reason ?></td>

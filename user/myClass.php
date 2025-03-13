@@ -10,14 +10,14 @@ require_once("../config/database.php");
     <link rel="stylesheet" type="text/css" href="./user.css">
 </head>
 <body>
-    <h3>选课管理</h3>
+    <h3>選課管理</h3>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>学分</th>
-        <th>地点</th>
-        <th>教师名</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>學分</th>
+        <th>地點</th>
+        <th>教師名</th>
         <th>操作</th>
     </tr>
     <?php
@@ -34,7 +34,7 @@ require_once("../config/database.php");
                 <td><?php echo $row->credit ?></td>
                 <td><?php echo $row->cadd ?></td>
                 <td><?php echo $row->tname ?></td>
-                <td><a href="delCourse.php?cid=<?php echo $row->cid."&sid=".$row->sid; ?>">退选</a></td>
+                <td><a href="delCourse.php?cid=<?php echo $row->cid."&sid=".$row->sid; ?>">退選</a></td>
             </tr>
             <?php
         }

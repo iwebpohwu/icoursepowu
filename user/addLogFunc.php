@@ -6,10 +6,10 @@
 
     $result=mysqli_query($db,$com);
     if($result){
-        echo "数据已更新。";
+        echo "資料已更新。";
     }
     else{
-        echo "数据未更改。";
+        echo "資料未更改。";
     }
 
     mysqli_close($db);
