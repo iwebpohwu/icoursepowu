@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/fun.css">
-    <title>数据统计 >> 成绩统计</title>
+    <title>資料統計 >> 成績統計</title>
     <script>
         function printresult(){
             document.getElementsByName("resultbox")[0].contentWindow.print();
         }
     </script>
 </head>
-<body><a style="float:right;margin-right:50px" href="#" onclick="printresult()">打印</a>
-<h3 class="subtitle">数据统计 >> 成绩统计</h3>
+<body><a style="float:right;margin-right:50px" href="#" onclick="printresult()">列印</a>
+<h3 class="subtitle">資料統計 >> 成績統計</h3>
 <form action="./fun/scoreStatistic.php" method="get" target="resultbox">
-    <div class="inputbox"><span>学号：</span><input name="sid"  type="text"></div>
+    <div class="inputbox"><span>學號：</span><input name="sid"  type="text"></div>
     <div class="inputbox"><span>姓名：</span><input name="name"  type="text"></div>
-    <div class="inputbox"><span>班级：</span><input name="class"  type="text"></div>
-    <div class="inputbox"><span>院系：</span>
+    <div class="inputbox"><span>班級：</span><input name="class"  type="text"></div>
+    <div class="inputbox"><span>院科：</span>
     <?php
     require_once '../config/database.php';
     echo '<select name="did"><option value="">全部</option>';

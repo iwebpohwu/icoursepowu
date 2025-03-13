@@ -7,8 +7,8 @@
 </head>
 <body>
 <form action="./fun/getLog.php" method="get" target="resultbox">
-    <h3 class="subtitle">学生管理 >> 奖惩管理</h3>
-    <div class="inputbox"><span>学号：</span><input name="sid" type="text"></div>
+    <h3 class="subtitle">學生管理 >> 獎懲管理</h3>
+    <div class="inputbox"><span>學號：</span><input name="sid" type="text"></div>
     <div class="inputbox"><span>姓名：</span><input name="name" type="text"></div>
     
     <div class="clickbox clearfloat"><input name="submit" type="submit" value="提交"></div>

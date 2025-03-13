@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="./css/fun.css">
-    <title>课程管理 >> 新增课程</title>
+    <title>課程管理 >> 新增課程</title>
 </head>
 <body>
-<h3 class="subtitle">课程管理 >> 新增课程</h3>
+<h3 class="subtitle">課程管理 >> 新增課程</h3>
 <form action="./fun/addCourse.php" method="post" target="resultbox">
-    <div class="inputbox"><span>课程号：</span><input name="cid" required type="text"></div>
-    <div class="inputbox"><span>课程名：</span><input name="cname" required type="text"></div>
-    <div class="inputbox"><span>学分：</span><input name="credit" required type="text"></div>
-    <div class="inputbox"><span>上课地址：</span><input name="cadd" required type="text"></div>
-    <div class="inputbox"><span>开课学院：</span>
+    <div class="inputbox"><span>課程號：</span><input name="cid" required type="text"></div>
+    <div class="inputbox"><span>課程名：</span><input name="cname" required type="text"></div>
+    <div class="inputbox"><span>學分：</span><input name="credit" required type="text"></div>
+    <div class="inputbox"><span>上課地址：</span><input name="cadd" required type="text"></div>
+    <div class="inputbox"><span>開課學院：</span>
     <?php
     require_once '../config/database.php';
     echo '<select required name="did">';
@@ -24,7 +24,7 @@
     echo '</select>';
     mysqli_close($db);
     ?></div>
-    <div class="inputbox"><span>教师姓名：</span><input name="tname" required type="text"></div>
+    <div class="inputbox"><span>教師姓名：</span><input name="tname" required type="text"></div>
 
     <br>
     <div class="clickbox clearfloat"><span></span><input name="submit" type="submit" value="提交"></div>

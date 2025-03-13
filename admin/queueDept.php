@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>院系信息</title>
+    <title>院科信息</title>
     <link rel="stylesheet" type="text/css" href="./css/fun.css">
 </head>
 <body>
-    <h3 class="subtitle">院系管理 >> 院系列表</h3>
+    <h3 class="subtitle">院科管理 >> 院科列表</h3>
 <table>
     <tr>
-        <th>院系序号</th>
-        <th>院系名称</th>
+        <th>院科序號</th>
+        <th>院科名稱</th>
         <th>所在地址</th>
-        <th>负责人</th>
-        <th>联系方式</th>
+        <th>負責人</th>
+        <th>聯繫方式</th>
         <th>操作</th>
     </tr>
     <?php
