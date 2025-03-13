@@ -8,12 +8,12 @@
 <body>
 <table>
     <tr>
-        <th>学号</th>
+        <th>學號</th>
         <th>姓名</th>
-        <th>学院</th>
-        <th>班级</th>
-        <th>平均成绩</th>
-        <th>已修学分</th>
+        <th>學院</th>
+        <th>班級</th>
+        <th>平均成績</th>
+        <th>已修學分</th>
     </tr>
     <?php
     require_once("../../config/database.php");
@@ -56,7 +56,7 @@ as v4 natural join course) as v5 group by sid) as v6 where 1=1" ;
                 <td><?php echo $row->class ?></td>
                 <td><?php echo $row->avg_score ?></td>
                 <td><?php echo $row->sum_credit ?></td>
-                <td><a href="getStuScore.php?sid=<?php echo $row->sid ?>">成绩详情</a></td>
+                <td><a href="getStuScore.php?sid=<?php echo $row->sid ?>">成績詳情</a></td>
             </tr>
             <?php
         }

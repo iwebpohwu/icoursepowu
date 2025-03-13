@@ -8,9 +8,9 @@
 <body>
 <table>
     <tr>
-        <th>学号</th>
+        <th>學號</th>
         <th>姓名</th>
-        <th>学院</th>
+        <th>學院</th>
         <th>操作</th>
     </tr>
     <?php
@@ -32,7 +32,7 @@
                 <td><?php echo $row->sid ?></td>
                 <td><?php echo $row->name ?></td>
                 <td><?php echo $row->dname ?></td>
-                <td><a href="modiStudent.php?sid=<?php echo $row->sid ?>">学生详情</a> / <a href="./resetPassword.php?sid=<?php echo $row->sid; ?>">重置密码</a></td>
+                <td><a href="modiStudent.php?sid=<?php echo $row->sid ?>">學生詳情</a> / <a href="./resetPassword.php?sid=<?php echo $row->sid; ?>">重置密碼</a></td>
             </tr>
             <?php
         }

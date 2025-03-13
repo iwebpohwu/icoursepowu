@@ -10,10 +10,10 @@ $com2="delete from user_student where sid='$sid'";
 $result=mysqli_query($db,$com);
 $result2=mysqli_query($db,$com2);
 if($result&&$result2){
-    echo '<h4 style="margin:30px;">提示：操作成功，相关的学生账户已移除。</h4>';
+    echo '<h4 style="margin:30px;">提示：操作成功，相關的學生帳戶已移除。</h4>';
 }
 else{
-    echo '<h4 style="margin:30px;">注意：数据未更改！</h4>';
+    echo '<h4 style="margin:30px;">注意：資料未更改！</h4>';
 }
     mysqli_close($db);
     ?>

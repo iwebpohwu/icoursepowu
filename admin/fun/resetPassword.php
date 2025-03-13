@@ -13,19 +13,19 @@ $result1=mysqli_query($db,$com1);
 if($result1->num_rows>0){ //user exists
     $result2=mysqli_query($db,$com2);
     if($result2){
-        echo '<h4 style="margin:30px;">提示：用户存在，密码已重置为学号后六位。</h4>';
+        echo '<h4 style="margin:30px;">提示：使用者存在，密碼已重置為學號後六位。</h4>';
     }
     else{
-    echo '<h4 style="margin:30px;">注意：用户存在，数据未更改！</h4>';
+    echo '<h4 style="margin:30px;">注意：使用者存在，資料未更改！</h4>';
     }
 }
 else{ //user 404
     $result3=mysqli_query($db,$com3);
     if($result3){
-        echo '<h4 style="margin:30px;">提示：已新增用户，密码设置为学号后六位。</h4>';
+        echo '<h4 style="margin:30px;">提示：已新增使用者，密碼設置為學號後六位。</h4>';
     }
     else{
-    echo '<h4 style="margin:30px;">注意：用户不存在，数据未更改！</h4>';
+    echo '<h4 style="margin:30px;">注意：使用者不存在，資料未更改！</h4>';
     }
 }
 

@@ -8,13 +8,13 @@
 <body>
 <table>
     <tr>
-        <th>学号</th>
+        <th>學號</th>
         <th>姓名</th>
-        <th>奖惩</th>
-        <th>缘由</th>
-        <th>详情</th>
-        <th>发生时间</th>
-        <th>录入时间</th>
+        <th>獎懲</th>
+        <th>緣由</th>
+        <th>詳情</th>
+        <th>發生時間</th>
+        <th>錄入時間</th>
         <th>操作</th>
     </tr>
     <?php
@@ -37,17 +37,17 @@
                 <td><?php echo $row->name ?></td>
                 <td><?php
                     if ($row->type==1){
-                        echo '奖';
+                        echo '獎';
                     }
                     else{
-                        echo '惩';
+                        echo '懲';
                     }
                     ?></td>
                 <td><?php echo $row->reason ?></td>
                 <td><?php echo $row->detail ?></td>
                 <td><?php echo $row->logdate ?></td>
                 <td><?php echo $row->addtime ?></td>
-                <td><a href="modiLog.php?sid=<?php echo $row->sid."&addtime=".$row->addtime; ?>">修改</a> / <a href="delLog.php?sid=<?php echo $row->sid."&addtime=".$row->addtime; ?>">删除</a></td>
+                <td><a href="modiLog.php?sid=<?php echo $row->sid."&addtime=".$row->addtime; ?>">修改</a> / <a href="delLog.php?sid=<?php echo $row->sid."&addtime=".$row->addtime; ?>">刪除</a></td>
             </tr>
             <?php
         }

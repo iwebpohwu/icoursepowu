@@ -13,10 +13,10 @@ $com="insert into course (cid,cname,credit,cadd,did,tname) values('$cid','$cname
 
 $result=mysqli_query($db,$com);
 if($result){
-    echo '<h4 style="margin:30px;">提示：已添加课程！</h4>';
+    echo '<h4 style="margin:30px;">提示：已添加課程！</h4>';
 }
 else{
-    echo '<h4 style="margin:30px;">注意：数据未更改！</h4>';
+    echo '<h4 style="margin:30px;">注意：資料未更改！</h4>';
 }
 
 mysqli_close($db);

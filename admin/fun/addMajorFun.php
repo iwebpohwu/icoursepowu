@@ -7,10 +7,10 @@ $com="insert into major (did,mname) values('$did','$mname') " ;
 
 $result=mysqli_query($db,$com);
 if($result){
-    echo '<h4 style="margin:30px;">提示：信息更改成功！</h4>';
+    echo '<h4 style="margin:30px;">提示：資訊更改成功！</h4>';
 }
 else{
-    echo '<h4 style="margin:30px;">注意：数据未更改，可能专业已存在。</h4>';
+    echo '<h4 style="margin:30px;">注意：資料未更改，可能專業已存在。</h4>';
 }
 
 mysqli_close($db);

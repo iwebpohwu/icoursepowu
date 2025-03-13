@@ -22,13 +22,13 @@
     
 <table>
 <tr>
-    <th style="min-width: 6%;">学号</th>
+    <th style="min-width: 6%;">學號</th>
     <th style="min-width: 5%;">姓名</th>
-    <th style="min-width: 3%;">性别</th>
-    <th style="min-width: 3%;">年龄</th>
-    <th style="min-width: 3%;">班级</th>
-    <th style="min-width: 8%;">院系</th>
-    <th style="min-width: 8%;">证件号码</th>
+    <th style="min-width: 3%;">性別</th>
+    <th style="min-width: 3%;">年齡</th>
+    <th style="min-width: 3%;">班級</th>
+    <th style="min-width: 8%;">院科</th>
+    <th style="min-width: 8%;">證件號碼</th>
     <th style="min-width: 6%;">操作</th>
 </tr>
 <?php
@@ -69,7 +69,7 @@ if($result){
             <td><?php echo $row->class ?></td>
             <td><?php echo $row->dname ?></td>
             <td><?php echo $row->idnum ?></td>
-            <td><a href="modiStudent.php?sid=<?php echo $row->sid?>">修改</a> / <a href="delStudent.php?sid=<?php echo $row->sid?>">删除</a></td>
+            <td><a href="modiStudent.php?sid=<?php echo $row->sid?>">修改</a> / <a href="delStudent.php?sid=<?php echo $row->sid?>">刪除</a></td>
         </tr>
         <?php
     }

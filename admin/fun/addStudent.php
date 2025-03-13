@@ -10,10 +10,10 @@
     $result=mysqli_query($db,$com);
     $result2=mysqli_query($db,$com2);
     if($result&&$result2){
-        echo "成功，同时已新建学生账户，密码为学号后六位";
+        echo "成功，同時已新建學生帳戶，密碼為學號後六位";
     }
     else{
-        echo "数据未更改。";
+        echo "資料未更改。";
     }
 
     mysqli_close($db);

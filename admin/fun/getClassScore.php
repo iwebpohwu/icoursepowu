@@ -8,12 +8,12 @@
 <body>
 <table>
     <tr>
-        <th>学号</th>
+        <th>學號</th>
         <th>姓名</th>
-        <th>学院</th>
-        <th>班级</th>
-        <th>成绩</th>
-        <th>类型</th>
+        <th>學院</th>
+        <th>班級</th>
+        <th>成績</th>
+        <th>類型</th>
     </tr>
     <?php
     require_once("../../config/database.php");
@@ -30,7 +30,7 @@
                 <td><?php echo $row->name ?></td>
                 <td><?php echo $row->dname ?></td>
                 <td><?php echo $row->class ?></td>
-                <td><?php if($row->score==0) echo("未考试"); else echo $row->score ?></td>
+                <td><?php if($row->score==0) echo("未考試"); else echo $row->score ?></td>
                 <td><?php if($row->status==1)echo "重修" ;else echo "首次" ?></td>
             </tr>
             <?php

@@ -10,7 +10,7 @@ require_once("../../config/database.php");
     <link rel="stylesheet" type="text/css" href="../css/fun.css">
     <script>
     function addScore(sid,cid){
-        var score = prompt("请输入成绩","");
+        var score = prompt("請輸入成績","");
         window.location.href="./addScore.php?sid="+sid+"&cid="+cid+"&score="+score;
     }
 </script>
@@ -18,14 +18,14 @@ require_once("../../config/database.php");
 <body>
 <table>
     <tr>
-        <th>学号</th>
+        <th>學號</th>
         <th>姓名</th>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>教师</th>
-        <th>学分</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>教師</th>
+        <th>學分</th>
         
-        <th>重修成绩</th>
+        <th>重修成績</th>
     </tr>
     <?php
     $com="select * from student natural join student_course as v1 left join course on v1.cid=course.cid where status=1 " ;
@@ -58,7 +58,7 @@ require_once("../../config/database.php");
                 <td><?php echo $row->cname ?></td>
                 <td><?php echo $row->tname ?></td>
                 <td><?php echo $row->credit ?></td>
-                <td><?php if($row->score==NULL) echo("<a onclick='addScore($row->sid,$row->cid);' href='#'>登记成绩</a>"); else echo($row->score)?>
+                <td><?php if($row->score==NULL) echo("<a onclick='addScore($row->sid,$row->cid);' href='#'>登記成績</a>"); else echo($row->score)?>
             </tr>
             <?php
         }

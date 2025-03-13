@@ -8,12 +8,12 @@
 <body>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>学分</th>
-        <th>上课地址</th>
-        <th>开课学院</th>
-        <th>教师名</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>學分</th>
+        <th>上課地址</th>
+        <th>開課學院</th>
+        <th>教師名</th>
     </tr>
     <?php
    require_once("../../config/database.php");
@@ -50,7 +50,7 @@
                 <td><?php echo $row->cadd ?></td>
                 <td><?php echo $row->dname ?></td>
                 <td><?php echo $row->tname ?></td>
-                <td><a href="./delClass.php?cid=<?php echo $row->cid ?>">删除</a></td>
+                <td><a href="./delClass.php?cid=<?php echo $row->cid ?>">刪除</a></td>
             </tr>
             <?php
         }

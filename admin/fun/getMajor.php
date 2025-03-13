@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../css/fun.css">
     <script>
         function reName(mname){
-            var nname = prompt("请输入要更改的名称",mname);
+            var nname = prompt("請輸入要更改的名稱",mname);
             if(nname){
                 window.location.href="./editMajor.php?mname="+mname+"&nname="+nname;
             }
@@ -27,16 +27,16 @@
     $com="select * from major where did='".$_GET['did']."'" ;
     $result=mysqli_query($db,$com);
     if($result){
-        echo ("<h3>当前开设的专业有：</h3><ul>");
+        echo ("<h3>當前開設的專業有：</h3><ul>");
         while($row=mysqli_fetch_object($result)){
             ?>
-            <li><?php echo $row->mname ?><a href="#" onclick="reName('<?php echo $row->mname ?>')">改</a><a href="./delMajor.php?mname=<?php echo $row->mname ?>">删</a></li>
+            <li><?php echo $row->mname ?><a href="#" onclick="reName('<?php echo $row->mname ?>')">改</a><a href="./delMajor.php?mname=<?php echo $row->mname ?>">刪</a></li>
             <?php
         }
         echo("</ul>");
     }
     else{
-        echo ("<h3>提示：你选择的学院当前没有开设专业</h3>");
+        echo ("<h3>提示：你選擇的學院當前沒有開設專業</h3>");
     }
 
     mysqli_close($db);

@@ -4,7 +4,7 @@
     $check="select * from student where sid='$sid'";
     $checkrs=mysqli_query($db,$check);
     if($checkrs->num_rows==0){
-        echo "学号不存在！数据未更改。";
+        echo "學號不存在！資料未更改。";
         exit();
     }
     
@@ -13,10 +13,10 @@
 
     $result=mysqli_query($db,$com);
     if($result){
-        echo "已添加记录。";
+        echo "已添加記錄。";
     }
     else{
-        echo "数据未更改。";
+        echo "資料未更改。";
     }
 
     mysqli_close($db);

@@ -8,12 +8,12 @@
 <body>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>学分</th>
-        <th>教师名</th>
-        <th>成绩</th>
-        <th>备注</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>學分</th>
+        <th>教師名</th>
+        <th>成績</th>
+        <th>備註</th>
     </tr>
     <?php
     require_once("../../config/database.php");

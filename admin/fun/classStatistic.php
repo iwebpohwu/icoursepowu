@@ -8,13 +8,13 @@
 <body>
 <table>
     <tr>
-        <th>课程号</th>
-        <th>课程名</th>
-        <th>教师名</th>
-        <th>开课学院</th>
-        <th>选课人数</th>
+        <th>課程號</th>
+        <th>課程名</th>
+        <th>教師名</th>
+        <th>開課學院</th>
+        <th>選課人數</th>
         <th>已修人次</th>
-        <th>平均分数</th>
+        <th>平均分數</th>
         <th>操作</th>
     </tr>
     <?php
@@ -51,7 +51,7 @@
                 <td><?php if($row->taking==0)echo "0";else echo $row->taking ?></td>
                 <td><?php if($row->finished==0)echo "0";else echo $row->finished ?></td>
                 <td><?php echo $row->avg_score ?></td>
-                <td><a href="getClassScore.php?cid=<?php echo $row->cid ?>">详情</a></td>
+                <td><a href="getClassScore.php?cid=<?php echo $row->cid ?>">詳情</a></td>
             </tr>
             <?php
         }
