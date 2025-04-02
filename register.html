@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。務必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function checkform() {
+            var sid = document.getElementById("exampleInputSid");
+            var sname = document.getElementById("exampleInputSname");
+            var password = document.getElementById("exampleInputPassword");
+            var password1 = document.getElementById("exampleInputPassword1");
+            if(sid.value==""){
+                alert('請輸入學號');
+                sid.focus();
+                return false;
+            }
+            if(sname.value==""){
+                alert('請輸入姓名');
+                sname.focus();
+                return false;
+            }
+            if(password.value==""){
+                alert('請輸入密碼');
+                password.focus();
+                return false;
+            }
+            if(password1.value==""){
+                alert('請輸入確認密碼');
+                password1.focus();
+                return false;
+            }
+            if(password1.value!=password.value){
+                alert('確認密碼與密碼不一致');
+                password1.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h1>學生選課系統---註冊</h1>
+        <form action="registerCheck.php" method="post" onsubmit="return checkform()">
+            <div class="form-group">
+                <label for="exampleInputSid">學號</label>
+                <input type="text" class="form-control" id="exampleInputSid" placeholder="請輸入學號" name="sid">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputSname">姓名</label>
+                <input type="text" class="form-control" id="exampleInputSname" placeholder="請輸入姓名" name="sname">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword">密碼</label>
+                <input type="password" class="form-control" id="exampleInputPassword" placeholder="請輸入密碼" name="password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">確認密碼</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼" name="password1">
+            </div>
+            <button type="submit" class="btn btn-default">註冊</button>
+            <a class="btn btn-default" href="index.html" role="button">點此登錄</a>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+</body>
+</html>
